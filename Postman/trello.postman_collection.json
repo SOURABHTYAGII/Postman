@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "31034dc2-0a89-4463-8714-5864d44df5a0",
+		"name": "trello",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24332550"
+	},
+	"item": [
+		{
+			"name": "create a board",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/?name=sourabh&key=0a905c10fe14a35678508ff3ac1d667c&token=8f0b8384736b331a60be2fc6eb7b4a2a3163ccf3ab5a5f67f1bbb2b2b650f0ec",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "sourabh"
+						},
+						{
+							"key": "key",
+							"value": "0a905c10fe14a35678508ff3ac1d667c"
+						},
+						{
+							"key": "token",
+							"value": "8f0b8384736b331a60be2fc6eb7b4a2a3163ccf3ab5a5f67f1bbb2b2b650f0ec"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete a board",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "ttps://api.trello.com/1/boards/dvFuTnny?key=0a905c10fe14a35678508ff3ac1d667c&token=8f0b8384736b331a60be2fc6eb7b4a2a3163ccf3ab5a5f67f1bbb2b2b650f0ec",
+					"protocol": "ttps",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"dvFuTnny"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "0a905c10fe14a35678508ff3ac1d667c"
+						},
+						{
+							"key": "token",
+							"value": "8f0b8384736b331a60be2fc6eb7b4a2a3163ccf3ab5a5f67f1bbb2b2b650f0ec"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update the data",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
